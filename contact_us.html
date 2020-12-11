@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css"> 
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <span>
+        <ul class="menuu" >
+           <img src="logo.jpg" alt="logo pepsodent" class="logo">
+           <li><a href="#Produk" class="menu"> Produk</a></li>
+           <li><a href="#SeputarGigi&Mulut" class="menu">Seputar Gigi & Mulut</a></li>
+           <li><a href="#GigiSensitif" class="menu">Gigi Sensitif</a></li>
+           <li><a href="#MisiSosial" class="menu">Misi Sosial</a></li>
+           <li><a href="biodata.html" class="menu"> Biodata</a></li>
+           <li><a href="contact_us.html" class="menu"> Contact Us</a></li>
+           <li><i class="fas fa-search" style="padding-left: 10px;color: rgb(196, 190, 190);"></i></li>
+       </ul>
+   </span>
+
+    <h1> Contact Us </h1>
+    <form action="process.php" >
+        <p><label> Nama Lengkap: </label><input type="text" name="nama" placeholder="masukkan nama" required></p>
+        <p><label> Email: </label><input type="email" name="email" placeholder="masukkan email" required></p> 
+        <p><label> Username: </label><input type="text" name="username" placeholder="masukkan username" required></p>
+        <p><label> Password: </label><input type="password" name="password" placeholder="masukkan password" required></p>
+        <p>
+            <label> Jenis Kelamin:</label>
+            <input type="radio" name="gender" value="laki"><label> Laki-laki</label>
+            <input type="radio" name="gender" value="perempuan"><label> Perempuan</label>
+        </p>
+        <p>
+            <label> Agama:</label>
+            <select name="Agama">
+                <option value=" Kristen Protestan"   selected>Kristen</option>
+                <option value=" Islam">Islam</option>
+                <option value=" Buddha">Buddha</option>
+                <option value=" Konghucu">Konghucu</option>
+                <option value=" Katolik">Katolik</option>
+            </select>
+        </p>
+        <p><label> Alamat:</label><textarea rows="10" cols="100"></textarea></p>
+        <p>
+            <label name="hobi"> Hobi:</label><br>
+            <input type="checkbox" value="Melukis" checked><label>Melukis</label><br>
+            <input type="checkbox" value="Olahraga"><label>Olahraga</label><br>
+            <input type="checkbox"value="Nonton"><label>Nonton</label><br>
+            <input type="checkbox"value="Bernyanyi"><label>Bernyanyi</label><br>
+            <input type="checkbox"value="Bermain Game"><label>Bermain Game</label><br>
+        </p>
+        <input type="submit" value="Simpan">
+        <input type="reset">
+    </form>
+
+</body>
+</html>
