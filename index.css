@@ -9,9 +9,7 @@
 
 
 .menu{
-    background-color: white;
     border-bottom: solid 1px rgb(196, 193, 193);
-    height: 9%;
 }
 
 .menu-item{
@@ -54,23 +52,16 @@ footer{
     background:linear-gradient(to top , rgb(32, 66, 141)70%,  rgb(27, 44, 121)90%) ;
 }
 
-@media only screen and (max-width:650px){
+@media only screen and (max-width:600px){
     footer{
         text-align: center;
-        line-height: 00.8em;
-    }
-    .teks-merah{
-        font-size: 0.7em;
-    }
-    .teks-biru{
-        font-size: 1.3em;
-    }
-    .tombol{
-        width: 100%;
-    }
-    p{
-        font-size: 0.7em;
-    }
+        line-height: 00.8em;}
+    .teks-merah{font-size: 0.7em;}
+    .teks-biru{font-size: 1.3em;}
+    .tombol{width: 100%;}
+    p{font-size: 0.7em;}
+    .navbar-brand{padding-left: 35%;}
+    .card{width: 80%;}
 }
 
 li{
@@ -86,7 +77,7 @@ li{
 }
 
 .card{
-    margin: 10% 30%;
+    margin: 5% 30% 10% 30%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -95,11 +86,13 @@ li{
     border-bottom: 1px solid rgb(125, 166, 243);
 }
 
-input[type=text],[type=email],[type=password],select,textarea{
+input[type=text],select,textarea,input[type=password],input[type=email]{
     width: 100%;
     border: none;
     border-bottom:3px solid rgb(207, 99, 80);
-  }
+    border-top:3px solid rgb(207, 99, 80);
+}
+
 
 
 label{
