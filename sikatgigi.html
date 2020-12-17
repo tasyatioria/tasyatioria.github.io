@@ -1,76 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="index.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<head>    
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Cara Menyikat Gigi</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Belajar Menyikat Gigi</title>
 </head>
 <body>
-    <span>
-        <ul class="menuu">
-           <a href="index.html"><img src="logo.jpg" alt="logo pepsodent" class="logo"></a>
-           <li><a href="#Produk" class="menu"> Produk</a></li>
-           <li><a href="#SeputarGigi&Mulut" class="menu">Seputar Gigi & Mulut</a></li>
-           <li><a href="#GigiSensitif" class="menu">Gigi Sensitif</a></li>
-           <li><a href="#MisiSosial" class="menu">Misi Sosial</a></li>
-           <li><a href="biodata.html" class="menu"> Biodata</a></li>
-           <li><a href="contact_us.html" class="menu"> Contact Us</a></li>
-           <li><i class="fas fa-search" style="padding-left: 10px; color: rgb(196, 190, 190);"></i></li>
-       </ul>
-   </span>
+    <nav class="navbar navbar-expand-sm fixed-top menu bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo3.jpg" alt="logo pepsodent" style="width: 110px;">
+        </a>
+        <button  class="navbar-toggler menu-item navbar-light" type="button" data-toggle="collapse" data-target="#hilang">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="hilang">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="biodata.html" id="navbar">Biodata</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="sikatgigi.html" id="navbar">Sikat Gigi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="contact_us.html" id="navbar">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="artikel.html" id="navbar">Artikel</a>
+                </li>
+                <li class="dropdown nav-item">
+                    <a class="nav-link dropdown-toggle menu-item" href="https://www.tanyapepsodent.com/home.html#" data-toggle="dropdown">
+                        Misi Soial
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="https://www.tanyapepsodent.com/misi-sosial/apa-yang-kami-lakukan.html">Apa yang Kami Lakukan</a>
+                        <a class="dropdown-item" href="https://www.tanyapepsodent.com/berbagisenyum.html">Berbagi Senyum</a>
+                        <a class="dropdown-item" href="https://www.tanyapepsodent.com/misi-sosial/bijak-plastik.html">Bijak Plastik</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-search" style="color: rgb(180, 180, 180); padding: 15px;"></i>
+                </li>
+            </ul> 
+        </div>
+    </nav><br>
 
-   <img src="sikatgigi.webp" class="banner">
 
-    <p class="sikatjudul1">Pertanyaan-pertanyaan anda seputar perawatan mulut</p>
-    <p class="sikatjudul2">Cara Menyikat Gigi Yang Baik Dan Benar</p>
-    <p class="sikatisi">Kebanyakan orang tahu cara menyikat gigi - tapi tahukah Anda ada sebuah seni untuk membuat gigi bersih menyeluruh? Pada petunjuk ini kami akan memberi dasar-dasar dan menjelaskan bagaimana agar Anda dapat menyempurnakan tekniknya dan menjaga gigi lebih bersih dan lebih sehat.</p>
-    <p class="sikatjudul3">Dasar-dasar menyikat gigi</p>
-    <p class="sikatisi">Kapankah waktu terbaik untuk menyikat gigi? Setidaknya dua kali sehari, setelah sarapan dan sebelum tidur. Anda juga dapat menyikat gigi setelah menyantap makan siang atau makanan lain. Ingatlah untuk menunggu setidaknya 30 menit setelah mengonsumsi makanan dan minuman berasam, seperti buah-buahan asam, anggur atau jus buah. Jika Anda menyikat gigi terlalu awal, sementara asam masih berpotensi menyerang email gigi, Anda beresiko merusaknya dalam keadaan yang rentan.</p>
-    <p class="sikatisi">Dengan apa? Baik sikat gigi manual atau elektrik. Pastikan kepala sikat pas dalam mulut Anda dengan nyaman dan dapat menjangkau semua area. Pepsodent menawarkan rangkaian sikat gigi sehingga Anda dapat memilih yang terbaik untuk Anda.</p>
-    <p class="sikatisi">Untuk berapa lama? Setidaknya dua menit, walaupun banyak dokter gigi merekomendasikan 3 menit untuk menyikat gigi, khususnya jika Anda memakai sikat gigi manual.</p>
-    <p class="sikatjudul3"> Perbaiki teknik Anda</p>
-    <p class="sikatisi">Bahkan jika Anda pikir Anda tahu cara menyikat gigi dengan benar, Anda bisa menemukan ruang untuk meningkatkannya:</p>
-    <p class="sikatjudul3">Menyikat dengan sikat gigi manual</p>
-    <ul>
-        <li class="sikat">Posisikan sikat gigi pada sudut 45 derajat dari gusi</li>
-        <li class=" sikat">Maju dan mundurkan secara lembut dengan gerakan pendek</li>
-        <li class="sikat">Gunakan ujung sikat untuk membersihkan permukaan dalam gigi depan dengan gerakan ke atas dan bawah</li>
-        <li class=" sikat">Sikat lidah Anda dengan lembut untuk menghilangkan bakteri dan menjaga nafas tetap segar</li>
-    </ul>
+    <img src="sikatgigi.webp" class="img-fluid">
+    <div class="container-sm p-5 text-center">
+        <div class="teks-merah">Pertanyaan-pertanyaan anda seputar perawatan mulut</div>
+        <h1 class="teks-biru">Cara Menyikat Gigi Yang Baik Dan Benar</h1>
+        <p style="text-align: left;"> Kebanyakan orang tahu cara menyikat gigi - tapi tahukah Anda ada sebuah seni untuk membuat gigi bersih menyeluruh? Pada petunjuk ini kami akan memberi dasar-dasar dan menjelaskan bagaimana agar Anda dapat menyempurnakan tekniknya dan menjaga gigi lebih bersih dan lebih sehat.</p>
+        <br>
+        <div class="teks-biru">Dasar-dasar menyikat gigi</div><br>
+        <p style="text-align: left;">Kapankah waktu terbaik untuk menyikat gigi? Setidaknya dua kali sehari, setelah sarapan dan sebelum tidur. Anda juga dapat menyikat gigi setelah menyantap makan siang atau makanan lain. Ingatlah untuk menunggu setidaknya 30 menit setelah mengonsumsi makanan dan minuman berasam, seperti buah-buahan asam, anggur atau jus buah. Jika Anda menyikat gigi terlalu awal, sementara asam masih berpotensi menyerang email gigi, Anda beresiko merusaknya dalam keadaan yang rentan.</p>
+        <p style="text-align: left;">Dengan apa? Baik sikat gigi manual atau elektrik. Pastikan kepala sikat pas dalam mulut Anda dengan nyaman dan dapat menjangkau semua area. Pepsodent menawarkan rangkaian sikat gigi sehingga Anda dapat memilih yang terbaik untuk Anda.</p>
+        <p style="text-align: left;">Untuk berapa lama? Setidaknya dua menit, walaupun banyak dokter gigi merekomendasikan 3 menit untuk menyikat gigi, khususnya jika Anda memakai sikat gigi manual.</p>
+        
+        <div class="teks-biru"> Perbaiki teknik Anda</div><br>
+        <p class="text.muted"  style="text-align: left;">Bahkan jika Anda pikir Anda tahu cara menyikat gigi dengan benar, Anda bisa menemukan ruang untuk meningkatkannya:</p>
+    
+        <div class="teks-biru"> Menyikat dengan sikat gigi manual</div><br>
+        <div style="text-align: left;">
+            <p class="sikat">1. Posisikan sikat gigi pada sudut 45 derajat dari gusi</p>
+            <p class=" sikat">2. Maju dan mundurkan secara lembut dengan gerakan pendek</p>
+            <p class="sikat">3. Gunakan ujung sikat untuk membersihkan permukaan dalam gigi depan dengan gerakan ke atas dan bawah</p>
+            <p class=" sikat">4. Sikat lidah Anda dengan lembut untuk menghilangkan bakteri dan menjaga nafas tetap segar</p>
+        </div>
 
+        <div class="teks-merah" style="padding-top: 10%;">temukan lebih banyak</div>
+        <div class="teks-biru" >Pertanyaan-Pertanyaan Anda Seputar Perawatan Mulut</div>
+        <br>
 
-
-
-   <span class="container2">
-    <div class="kiri">
-        <img src="logo2.png">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-youtube"></i>
-        <i class="fab fa-twitter"></i>
+        <div class="card-deck" style="text-align: left;">
+            <div class="card">
+                <img class="card-img-top" src="sikatgigi.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                <h4 class="card-title text-primary">Seperti Apa Tahapan Karies Gigi?</h4>
+                <p class="card-text">Sering mendengar istilah karies gigi? Ini merupakan sebuah kondisi rusaknya struktur dan lapisan gigi yang terjadi secara bertahap. Karies biasanya terjadi karena kebiasaan mengkonsumsi makanan manis atau jarang menyikat gigi.</p>
+                <a href="https://www.tanyapepsodent.com/artikel/plak-pembusukan-gigi/seperti-apa-tahapan-karies-gigi.html" class="btn btn-outline-primary">Baca artikel</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="sikatgigi.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                <h4 class="card-title text-primary">Segera Atasi Gigi Berlubang agar Tidak Menjadi karies Gigi!</h4>
+                <p class="card-text">Gigi berlubang merupakan kondisi gigi yang harus segera diatasi, karena gigi berlubang bila dibiarkan dapat menyebabkan akan mempengaruhi kesehatan gigi dan gusi, bahkan tubuh Anda</p>
+                <a href="https://www.tanyapepsodent.com/artikel/plak-pembusukan-gigi/segera-atasi-gigi-berlubang-agar-tidak-menjadi-karies-gigi.html" class="btn btn-outline-primary">Baca artikel</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="tengah">
-        <ul class="bawah">
-            <li class="menu2"> Peta Situs</li>
-            <li class="menu2"> Hubungi Kami</li>
-            <li class="menu2"> Pemberitahuan Cookie</li>
-        </ul>
-        <ul class="bawah">
-            <li class="menu2"> Pemberitahuan Privasi</li>
-            <li class="menu2"> Syarat Penggunaan</li>
-            <li class="menu2"> Pertanyaan yang sering diajukan</li>
-        </ul>
-    </div>
+    <footer class="container-fluid" style="padding: 3% 18%;">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="https://www.tanyapepsodent.com/home.html" class="btn"><img src="logo2.png"><br></a>
+                <div> </div><br><div></div>
+                <a href="https://www.facebook.com/tanyapepsodent" class="btn"><i class="fab fa-facebook-f paddingfooter" style="color: white;"></i></a>
+                <a href="https://www.youtube.com/channel/UCAQY1lbkCOrQuL_2I2ImPCw" class="btn"><i class="fab fa-youtube paddingfooter" style="color: white;"></i></a>
+                <a href="https://twitter.com/TanyaPepsodent" class="btn"><i class="fab fa-twitter paddingfooter" style="color: white;"></i></a>
+            </div>
+            <div class="col-md-6">
+                <div class="row" >
+                    <ul class="col-md-6"> </ul>
+                    <ul class="col-md-6"> </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.tanyapepsodent.com/peta-situs.html" style="color: white;">Peta Situs</a> </li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.tanyapepsodent.com/hubungi-kami.html" style="color: white;">Hubungi Kami</a> </li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.unilevernotices.com/indonesia/bahasa/cookie-notice/notice.html" style="color: white;">Pemberitahuan Cookie</a> </li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.unilevernotices.com/indonesia/bahasa/privacy-notice/notice.html" style="color: white;">Pemberitahuan Privasi</a> </li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.unilever.co.id/legal.html" style="color: white;">Syarat Penggunaan</a> </li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.tanyapepsodent.com/faq.html" style="color: white;">Pertanyaan yang sering diajukan</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.tanyapepsodent.com/pemilih-negara.html" class="btn"><i class="fas fa-globe paddingfooter" style="color: white;"> Indonesia</i></a><br>
+                <a href="https://www.unilever.co.id/" class="btn"><img src="unilever.png" class="paddingfooter" style="color: white;"></a><br>
+                <a href="https://www.unilever.co.id/" class="btn"><i class="far fa-copyright paddingfooter" style="color: white;"> 2020 Unilever</i></a>
+            </div>
+        </div>
+        <div class="text-center" style="font-size:0.8em;color: white;">Website ini diarahkan hanya ke konsumen, produk-produk, dan layanan-layanan Unilever Indonesia. Website ini tidak diarahkan untuk konsumen di luar Indonesia.</div>
+    </footer>
 
-    <div class="kiri">
-        <i class="fas fa-globe">Indonesia</i>
-        <div><img src="unilever.png" style="padding: 20px 10px"></div>
-        <i class="far fa-copyright"> 2020 Unilever</i>
-    </div>
-
-    <p class="akhir">Website ini diarahkan hanya ke konsumen, produk-produk, dan layanan-layanan Unilever Indonesia. Website ini tidak diarahkan untuk konsumen di luar Indonesia.</p>
-</span>
 </body>
 </html>
