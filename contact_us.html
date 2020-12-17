@@ -1,59 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="index.css"> 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Contact Us</title>
 </head>
 <body>
-    <span>
-        <ul class="menuu" >
-           <img src="logo.jpg" alt="logo pepsodent" class="logo">
-           <li><a href="#Produk" class="menu"> Produk</a></li>
-           <li><a href="#SeputarGigi&Mulut" class="menu">Seputar Gigi & Mulut</a></li>
-           <li><a href="#GigiSensitif" class="menu">Gigi Sensitif</a></li>
-           <li><a href="#MisiSosial" class="menu">Misi Sosial</a></li>
-           <li><a href="biodata.html" class="menu"> Biodata</a></li>
-           <li><a href="contact_us.html" class="menu"> Contact Us</a></li>
-           <li><i class="fas fa-search" style="padding-left: 10px;color: rgb(196, 190, 190);"></i></li>
-       </ul>
-   </span>
+    <nav class="navbar navbar-expand-sm fixed-top menu bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo3.jpg" alt="logo pepsodent" style="width: 110px;">
+        </a>
+        <button  class="navbar-toggler menu-item navbar-light" type="button" data-toggle="collapse" data-target="#hilang">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="hilang">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="biodata.html" id="navbar">Biodata</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="sikatgigi.html" id="navbar">Sikat Gigi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="contact_us.html" id="navbar">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="artikel.html" id="navbar">Artikel</a>
+                </li>
+                <li class="dropdown nav-item">
+                    <a class="nav-link dropdown-toggle menu-item" href="https://www.tanyapepsodent.com/home.html#" data-toggle="dropdown">
+                        Misi Soial
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="https://www.tanyapepsodent.com/misi-sosial/apa-yang-kami-lakukan.html">Apa yang Kami Lakukan</a>
+                        <a class="dropdown-item" href="https://www.tanyapepsodent.com/berbagisenyum.html">Berbagi Senyum</a>
+                        <a class="dropdown-item" href="https://www.tanyapepsodent.com/misi-sosial/bijak-plastik.html">Bijak Plastik</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-search" style="color: rgb(180, 180, 180); padding: 15px;"></i>
+                </li>
+            </ul> 
+        </div>
+    </nav><br>
 
-    <h1> Contact Us </h1>
-    <form action="process.php" >
-        <p><label> Nama Lengkap: </label><input type="text" name="nama" placeholder="masukkan nama" required></p>
-        <p><label> Email: </label><input type="email" name="email" placeholder="masukkan email" required></p> 
-        <p><label> Username: </label><input type="text" name="username" placeholder="masukkan username" required></p>
-        <p><label> Password: </label><input type="password" name="password" placeholder="masukkan password" required></p>
-        <p>
-            <label> Jenis Kelamin:</label>
-            <input type="radio" name="gender" value="laki"><label> Laki-laki</label>
-            <input type="radio" name="gender" value="perempuan"><label> Perempuan</label>
-        </p>
-        <p>
-            <label> Agama:</label>
-            <select name="Agama">
-                <option value=" Kristen Protestan"   selected>Kristen</option>
-                <option value=" Islam">Islam</option>
-                <option value=" Buddha">Buddha</option>
-                <option value=" Konghucu">Konghucu</option>
-                <option value=" Katolik">Katolik</option>
-            </select>
-        </p>
-        <p><label> Alamat:</label><textarea rows="10" cols="100"></textarea></p>
-        <p>
-            <label name="hobi"> Hobi:</label><br>
-            <input type="checkbox" value="Melukis" checked><label>Melukis</label><br>
-            <input type="checkbox" value="Olahraga"><label>Olahraga</label><br>
-            <input type="checkbox"value="Nonton"><label>Nonton</label><br>
-            <input type="checkbox"value="Bernyanyi"><label>Bernyanyi</label><br>
-            <input type="checkbox"value="Bermain Game"><label>Bermain Game</label><br>
-        </p>
-        <input type="submit" value="Simpan">
-        <input type="reset">
-    </form>
+    
+    <div class="settingarikel">
+        <h1 class="teks-biru text-center">Contact Us</h1>
+        <form class="form-horizontal" action="/action_page.php">
+            <div class="form-group">
+                <label class="control-label col-sm-3 teks-merah" for="nama">Nama Lengkap:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="nama" placeholder="masukkan nama Lengkap" name="nama">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-3 teks-merah" for="email">Email:</label>
+                <div class="col-sm-10">          
+                    <input type="email" class="form-control" id="email" placeholder="masukkan email" name="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-3 teks-merah" for="username">Username:</label>
+                <div class="col-sm-10">          
+                    <input type="text" class="form-control" id="username" placeholder="masukkan username" name="username">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-3 teks-merah" for="password">Password:</label>
+                <div class="col-sm-10">          
+                    <input type="password" class="form-control" id="password" placeholder="masukkan password" name="password">
+                </div>
+            </div>
+            <div class="form-group">        
+                <label class="control-label col-sm-3 teks-merah" for="jenis kelamin">Jenis Kelamin:</label>
+                <div class="col-sm-10">
+                  <div class="radio">
+                    <label><input type="radio" name="gender" value="laki"> Laki-laki</label>
+                    <label><input type="radio" name="gender" value="perempuan"> Perempuan</label>                  </div>
+                </div>
+            </div>
+            <div class="form-group">        
+                <label class="control-label col-sm-3 teks-merah" for="agama">Agama:</label>
+                <div class="col-sm-10">
+                  <div class="select">
+                    <select name="Agama" class="custom-select">
+                        <option value=" Kristen Protestan"   selected>Kristen</option>
+                        <option value=" Islam">Islam</option>
+                        <option value=" Buddha">Buddha</option>
+                        <option value=" Konghucu">Konghucu</option>
+                        <option value=" Katolik">Katolik</option>
+                    </select>                  
+                  </div>
+                </div>
+            </div>
+            <div class="form-group">        
+                <label class="control-label col-sm-3 teks-merah" for="alamat">Alamat:</label>
+                <div class="col-sm-10">
+                  <div class="textarea">
+                    <textarea rows="10" cols="100"></textarea>
+                  </div>
+                </div>
+            </div>
+            <div class="form-group">        
+                <label class="col-sm-offset-3 teks-merah" for="hobi">Hobi:</label>
+                <div class="col-sm-10">
+                    <div class="checkbox">
+                        <input type="checkbox" value="Melukis" checked><label> Melukis</label>
+                        <input type="checkbox" value="Olahraga"><label> Olahraga</label>
+                        <input type="checkbox"value="Nonton"><label> Nonton</label>
+                        <input type="checkbox"value="Bernyanyi"><label> Bernyanyi</label>
+                        <input type="checkbox"value="Bermain Game"><label> Bermain Game</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">        
+                <div class="col-sm-offset-3 col-sm-10">
+                    <button type="submit" class="btn btn-outline-primary btn-block">Simpan</button>
+                    <button type="reset" class="btn btn-danger btn-block">Hapus</button>
+                </div>
+            </div>
+        </form>
+    </div>
 
+    <footer class="container-fluid" style="padding: 3% 18%;">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="https://www.tanyapepsodent.com/home.html" class="btn"><img src="logo2.png"><br></a>
+                <div> </div><br><div></div>
+                <a href="https://www.facebook.com/tanyapepsodent" class="btn"><i class="fab fa-facebook-f paddingfooter" style="color: white;"></i></a>
+                <a href="https://www.youtube.com/channel/UCAQY1lbkCOrQuL_2I2ImPCw" class="btn"><i class="fab fa-youtube paddingfooter" style="color: white;"></i></a>
+                <a href="https://twitter.com/TanyaPepsodent" class="btn"><i class="fab fa-twitter paddingfooter" style="color: white;"></i></a>
+            </div>
+            <div class="col-md-6">
+                <div class="row" >
+                    <ul class="col-md-6"> </ul>
+                    <ul class="col-md-6"> </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.tanyapepsodent.com/peta-situs.html" style="color: white;">Peta Situs</a> </li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.tanyapepsodent.com/hubungi-kami.html" style="color: white;">Hubungi Kami</a> </li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.unilevernotices.com/indonesia/bahasa/cookie-notice/notice.html" style="color: white;">Pemberitahuan Cookie</a> </li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.unilevernotices.com/indonesia/bahasa/privacy-notice/notice.html" style="color: white;">Pemberitahuan Privasi</a> </li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.unilever.co.id/legal.html" style="color: white;">Syarat Penggunaan</a> </li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.tanyapepsodent.com/faq.html" style="color: white;">Pertanyaan yang sering diajukan</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.tanyapepsodent.com/pemilih-negara.html" class="btn"><i class="fas fa-globe paddingfooter" style="color: white;"> Indonesia</i></a><br>
+                <a href="https://www.unilever.co.id/" class="btn"><img src="unilever.png" class="paddingfooter" style="color: white;"></a><br>
+                <a href="https://www.unilever.co.id/" class="btn"><i class="far fa-copyright paddingfooter" style="color: white;"> 2020 Unilever</i></a>
+            </div>
+        </div>
+        <div class="text-center" style="font-size:0.8em;color: white;">Website ini diarahkan hanya ke konsumen, produk-produk, dan layanan-layanan Unilever Indonesia. Website ini tidak diarahkan untuk konsumen di luar Indonesia.</div>
+    </footer>
 </body>
 </html>

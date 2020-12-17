@@ -1,276 +1,103 @@
 *{
-    box-sizing: border-box; 
-    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
-.logo{
-    width: 95px;
-    position: sticky;
-    top: 0; 
-    margin-right: 130px;
-    display: inline-block;
-    float: left;
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
 }
-
-ul.menuu{
-    list-style-type: none;
-    overflow: hidden;
-    border-bottom: 1px solid gray;
-    position: sticky;
-    top: 0;
-    background-color: white;
-    padding: 10px 170px;
-    height: 50px;
-    z-index: +1;
-}
-
 
 
 .menu{
-    font-size: 13px;
+    border-bottom: solid 1px rgb(196, 193, 193);
+}
+
+.menu-item{
+    padding: 8px 12px;
+    color: rgb(21, 47, 161);
     font-weight: bold;
-    display: inline-block;
-    width: auto;
-    padding: 8px 12px;
-    color: rgb(40, 40, 148);
-    text-align: center;
-    text-decoration: none;
-    float: left;
+    font-size: large;
 }
 
-a:hover{
+a.menu-item:hover{
+    color: red;
     background-color: rgb(240, 240, 240);
-    columns: red;
-    padding: 8px 12px;
 }
 
-
-.banner{
-    display: block;
-    position: relative;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-}
-
-.container{
-    left: 25%;
-    position: relative;
-    width: 50%;
-    height: 80%;
-    float: left;
-    padding: 9% 0%;
-    display: block;
-}
-
-p.selamat{
-    font-size: 25px;
-    font-weight: 500;
-    text-align: center;
-    color:rgb(40, 40, 148);
-
-}
-
-p.isi{
-    text-align: center;
-    font-size: 15px;
-    color: rgb(87, 85, 85);
-}
-
-.logo2{
-    position: absolute;
-    width:17%;
-    left: 40%;
-}
-
-.isi2{
-    font-size: 14px;
+.teks-merah{    /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_text2*/
+    font-size: 1em;
     color: red;
     letter-spacing: 2px;
-    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
 
+.teks-biru{
+    font-size: 2em;
+    color: rgb(21, 47, 161);
+    padding: 0 5%;
+    font-weight: 400;
 }
 
 .tombol{
-    position: absolute;
-    left: 35%;
     font-weight: 600;
-    text-decoration: none;
     font-size: 11px;
-    color:rgb(40, 40, 148) ;
-    padding: 15px 30px;
-    border: 2px solid rgb(74, 171, 236);
+    color :rgb(21, 47, 161) ;
+    padding: 5% ;
 }
 
-.container2{
-    padding: 0px 15%;
-    position: absolute;
+footer{
     bottom: 0;
-    top:1800px;
-    left: 0;
-    height: 250px;
-    width: 100%;
+    font-size: 0.8em;
     background:linear-gradient(to top , rgb(32, 66, 141)70%,  rgb(27, 44, 121)90%) ;
 }
 
-ul.bawah{
-    color: white;
+@media only screen and (max-width:600px){
+    footer{
+        text-align: center;
+        line-height: 00.8em;}
+    .teks-merah{font-size: 0.7em;}
+    .teks-biru{font-size: 1.3em;}
+    .tombol{width: 100%;}
+    p{font-size: 0.7em;}
+    .navbar-brand{padding-left: 35%;}
+    .card{width: 80%;}
+}
+
+li{
     list-style-type: none;
-    display: inline;
 }
 
-.kiri{
-    color: white;
-    font-size: 12px;
-    padding: 40px 2px;
-    width: 15%;
-    height: 220px;
-    float: left;
-    margin: 20px;
+.settingsikatgigi{
+    margin: 6% 22%;
 }
 
-.tengah{
-    font-size: 12px;
-    padding: 40px 20px;
-    width:45% ;
-    height: 220px;
-    float: left;
-    margin: 20px;
+.settingarikel{
+    padding: 3% 15%;
 }
 
-.menu2{
-    width: 22,5%;
-    display:inline-block;
-    overflow: hidden;
-    margin: 5px 20px;
-    float: left;
-}
-.akhir{
-    font-size: 10px;
-    color: white;
-    bottom: 20px;
-    text-align: center;
-    position: absolute;
-}
-
-
-#tasya{
-    border: 3px solid rgb(153, 151, 151);
-    padding: 20px;
-    float: left;
-    width: 40%;
-}
-
-.biodata{
-    color: rgb(114, 102, 48);
-    position: relative;
-    left: 10px;
-    font-size: large;
-    letter-spacing: 3px;
-    padding: 10px;
-}
-
-
-input[type=submit] {
-    width: 45%;
-    font-size: 20px;
-    background-color: #5e8abb;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-
-input[type=reset] {
-    width: 45%;
-    font-size: 20px;
-    background-color: #bb5e5e;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-
-input[type=text],[type=email],[type=password], select {
-    width: 100%;
-    border: none;
-    border-bottom:3px solid rgb(207, 99, 80);
-    padding: 10px 15px;
-    display: inline-block;
-  }
-
-
-label{
-    font-size: 17px;
-    letter-spacing: 2px;
-}
-
-.isiartikel1{
-    font-size: 45px;
-    position: relative;
-    color: rgb(35, 35, 139);
-    height: auto;
-    margin: 20px;
-    display: block;
-}
-
-.isiartikel2{
-    position: relative;
-    color: rgb(192, 189, 189);
-    text-align: center;
-    height: auto;  
-    margin: 20px;
-    display: block;
+.card{
+    margin: 5% 30% 10% 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .opsi{
-    position: absolute;
-    left: 100px;
-    top: 550px;
-}
-.opsi1{
-    border-top: 1px solid rgb(125, 166, 243);
+    border: none;
+    border-bottom: 1px solid rgb(125, 166, 243);
 }
 
-.isiartikel3{
-    width: 40%;
-    float: left;
-    margin: 10px 10px 10px 70px;
-    border: 2px solid rgb(199, 196, 196);
+input[type=text],select,textarea,input[type=password],input[type=email]{
+    width: 100%;
+    border: none;
+    border-bottom:3px solid rgb(207, 99, 80);
+    border-top:3px solid rgb(207, 99, 80);
 }
 
-.sikatjudul1{
-    color: red;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 70px 100px 5px 100px;
-    letter-spacing: 3px;
+
+
+label{
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 2px;
 }
 
-.sikatjudul2{
-    font-size: 53px;
-    color: darkblue;
-    text-align: center;
-    padding: 0% 26% 2% 26% ;
-}
-
-.sikatisi{
-    padding: 5px 20%;
-    letter-spacing: 1px;
-    color: grey;
-}
-
-.sikatjudul3{
-    font-size: 21px;
-    color: darkblue;
-    padding: 30px 20% 5px 20%;
-    font-weight: 600;
-}
-
-li.sikat{
-    text-transform: uppercase;
-    font-size:17px;
-    margin: 5px 20%;
-    letter-spacing: 1px;
-    color: grey;
-}

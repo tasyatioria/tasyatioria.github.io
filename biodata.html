@@ -1,34 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="index.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<head>    
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Biodata</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Biodata</title>
 </head>
 <body>
-    <span>
-        <ul class="menuu" >
-           <img src="logo.jpg" alt="logo pepsodent" class="logo">
-           <li><a href="#Produk" class="menu"> Produk</a></li>
-           <li><a href="#SeputarGigi&Mulut" class="menu">Seputar Gigi & Mulut</a></li>
-           <li><a href="#GigiSensitif" class="menu">Gigi Sensitif</a></li>
-           <li><a href="#MisiSosial" class="menu">Misi Sosial</a></li>
-           <li><a href="biodata.html" class="menu"> Biodata</a></li>
-           <li><a href="contact_us.html" class="menu"> Contact Us</a></li>
-           <li><i class="fas fa-search" style="padding-left: 10px;color: rgb(196, 190, 190);"></i></li>
-       </ul>
-   </span>
+    <nav class="navbar navbar-expand-sm fixed-top menu bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo3.jpg" alt="logo pepsodent" style="width: 110px;">
+        </a>
+        <button  class="navbar-toggler menu-item navbar-light" type="button" data-toggle="collapse" data-target="#hilang">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="hilang">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="biodata.html" id="navbar">Biodata</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="sikatgigi.html" id="navbar">Sikat Gigi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="contact_us.html" id="navbar">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="artikel.html" id="navbar">Artikel</a>
+                </li>
+                <li class="dropdown nav-item">
+                    <a class="nav-link dropdown-toggle menu-item" href="https://www.tanyapepsodent.com/home.html#" data-toggle="dropdown">
+                        Misi Soial
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="https://www.tanyapepsodent.com/misi-sosial/apa-yang-kami-lakukan.html">Apa yang Kami Lakukan</a>
+                        <a class="dropdown-item" href="https://www.tanyapepsodent.com/berbagisenyum.html">Berbagi Senyum</a>
+                        <a class="dropdown-item" href="https://www.tanyapepsodent.com/misi-sosial/bijak-plastik.html">Bijak Plastik</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-search" style="color: rgb(180, 180, 180); padding: 15px;"></i>
+                </li>
+            </ul> 
+        </div>
+    </nav><br>
 
-    <img src="tasya.jpg" id="tasya">
-    <span class="biodata">
-        <p> Nama: Tasya Agisti Tioria</p>
-        <p> NIM: 1981007</p>
-        <p> Jurusan: Teknik Informatika</p>
-        <p> Status Tinggal: Outside</p>
-        <p> Tanggal Lahir: 23 Agustus 2001</p>
-        <p> Tempat Lahir: Bekasi</p>
-    </span>
+    <div style="padding:5% 0% 0% 0% ;">
+        <h1 class="teks-biru text-center">Biodata</h1>
+    </div>
+    <div class="card" style="width:40%">
+        <img class="card-img-top mx-auto" src="tasya.jpg" alt="TasyaAgisti" style="width:80%">
+        <div class="card-body">
+            <h4 class="card-title teks-merah">Tasya Agisti Tioria</h4>
+            <p class="card-text"> NIM: 1981007</p>
+            <p class="card-text"> Jurusan: Teknik Informatika</p>
+            <p class="card-text"> Status Tinggal: Outside</p>
+            <p class="card-text"> Tanggal Lahir: 23 Agustus 2001</p>
+            <p class="card-text"> Tempat Lahir: Bekasi</p>
+        </div>
+      </div>
+      <br>
+
+
+      <footer class="container-fluid" style="padding: 3% 18%;">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="https://www.tanyapepsodent.com/home.html" class="btn"><img src="logo2.png"><br></a>
+                <div> </div><br><div></div>
+                <a href="https://www.facebook.com/tanyapepsodent" class="btn"><i class="fab fa-facebook-f paddingfooter" style="color: white;"></i></a>
+                <a href="https://www.youtube.com/channel/UCAQY1lbkCOrQuL_2I2ImPCw" class="btn"><i class="fab fa-youtube paddingfooter" style="color: white;"></i></a>
+                <a href="https://twitter.com/TanyaPepsodent" class="btn"><i class="fab fa-twitter paddingfooter" style="color: white;"></i></a>
+            </div>
+            <div class="col-md-6">
+                <div class="row" >
+                    <ul class="col-md-6"> </ul>
+                    <ul class="col-md-6"> </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.tanyapepsodent.com/peta-situs.html" style="color: white;">Peta Situs</a> </li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.tanyapepsodent.com/hubungi-kami.html" style="color: white;">Hubungi Kami</a> </li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.unilevernotices.com/indonesia/bahasa/cookie-notice/notice.html" style="color: white;">Pemberitahuan Cookie</a> </li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.unilevernotices.com/indonesia/bahasa/privacy-notice/notice.html" style="color: white;">Pemberitahuan Privasi</a> </li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.unilever.co.id/legal.html" style="color: white;">Syarat Penggunaan</a> </li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.tanyapepsodent.com/faq.html" style="color: white;">Pertanyaan yang sering diajukan</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.tanyapepsodent.com/pemilih-negara.html" class="btn"><i class="fas fa-globe paddingfooter" style="color: white;"> Indonesia</i></a><br>
+                <a href="https://www.unilever.co.id/" class="btn"><img src="unilever.png" class="paddingfooter" style="color: white;"></a><br>
+                <a href="https://www.unilever.co.id/" class="btn"><i class="far fa-copyright paddingfooter" style="color: white;"> 2020 Unilever</i></a>
+            </div>
+        </div>
+        <div class="text-center" style="font-size:0.8em;color: white;">Website ini diarahkan hanya ke konsumen, produk-produk, dan layanan-layanan Unilever Indonesia. Website ini tidak diarahkan untuk konsumen di luar Indonesia.</div>
+    </footer>
 </body>
 </html>
