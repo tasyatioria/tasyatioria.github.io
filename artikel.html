@@ -1,121 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="index.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Artikel</title>
 </head>
 <body>
-    <span>
-        <ul class="menuu">
-           <a href="index.html"><img src="logo.jpg" alt="logo pepsodent" class="logo"></a>
-           <li><a href="#Produk" class="menu"> Produk</a></li>
-           <li><a href="#SeputarGigi&Mulut" class="menu">Seputar Gigi & Mulut</a></li>
-           <li><a href="#GigiSensitif" class="menu">Gigi Sensitif</a></li>
-           <li><a href="#MisiSosial" class="menu">Misi Sosial</a></li>
-           <li><a href="biodata.html" class="menu"> Biodata</a></li>
-           <li><a href="contact_us.html" class="menu"> Contact Us</a></li>
-           <li><i class="fas fa-search" style="padding-left: 10px;color: rgb(196, 190, 190);"></i></li>
-       </ul>
-   </span>
+    <nav class="navbar navbar-expand-sm fixed-top menu bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo3.jpg" alt="logo pepsodent" style="width: 110px;">
+        </a>
+        <button  class="navbar-toggler menu-item navbar-light" type="button" data-toggle="collapse" data-target="#hilang">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="hilang">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="biodata.html" id="navbar">Biodata</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="sikatgigi.html" id="navbar">Sikat Gigi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="contact_us.html" id="navbar">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="artikel.html" id="navbar">Artikel</a>
+                </li>
+                <li class="dropdown nav-item">
+                    <a class="nav-link dropdown-toggle menu-item" href="https://www.tanyapepsodent.com/home.html#" data-toggle="dropdown">
+                        Misi Soial
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="https://www.tanyapepsodent.com/misi-sosial/apa-yang-kami-lakukan.html">Apa yang Kami Lakukan</a>
+                        <a class="dropdown-item" href="https://www.tanyapepsodent.com/berbagisenyum.html">Berbagi Senyum</a>
+                        <a class="dropdown-item" href="https://www.tanyapepsodent.com/misi-sosial/bijak-plastik.html">Bijak Plastik</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-search" style="color: rgb(180, 180, 180); padding: 15px;"></i>
+                </li>
+            </ul> 
+        </div>
+    </nav><br>
 
-   <span class="container">
-        <p class="isiartikel1"> Pertanyaan-pertanyaan Anda Seputar Perawatan Gigi Dan Mulut</p>
-        <p class="isiartikel2">TEMUKAN SARAN BERMANFAAT TENTANG MASALAH-MASALAH KESEHATAN MULUT DALAM PANDUAN KAMI YANG DIBUAT OLEH PEPSODENT, PAKAR MULUT KELUARGA</p>
-        <img class="logo2" src="loogo2.jpg">
-    </span>
-
-    <span>
-        <label class="opsi">Aku ingin tahu lebih banyak tentang topik </label>
-        <select name="topik" class="opsi1">
-            <option value=" Semua"   selected>Semua</option>
-            <option value=" Anak">Anak</option>
-            <option value=" Diet & gaya hidup"> Diet & gaya hidup</option>
-            <option value=" Gigi Putih">Gigi Putih</option>
-            <option value=" Gigi Sensitif">Gigi Sensitif</option>
-            <option value=" Gigi dan Lidah">Gigi dan Lidah</option>
-            <option value=" Plak & Pembusukan Gigi">Plak & Pembusukan Gigi</option>
-            <option value=" Sikat Gigi">Sikat Gigi</option>
-        </select>
-    </span>
-
-    <span>
-        <span class="isiartikel3">
-            <img src="banner1.png" style="width: 500px;">
-            <p class="isi"> PLAK & PEMBUSUKAN GIGI </p>
-            <p class="selamat">Sakit gigi berlubang</p>
-            <p class="isi">Mengetahui gejala sakit gigi sensitif, sakit gigi berlubang, dan cara mengatasi sakit gigi berlubang.</p>
-            <p style="color:rgb(26, 84, 243);"> BACA SELENGKAPNYA</p>
-        </span>
-
-        <span class="isiartikel3" style="margin-right: 50px">
-            <img src="banner1.png" style="width: 500px;">
-            <p class="isi"> GIGI PUTIH </p>
-            <p class="selamat">Cara memutihkan gigi</p>
-            <p class="isi">Artikel ini membahas cara-cara memutihkan gigi yang bisa Anda lakukan di rumah atau di klinik dokter.</p>
-            <p style="color: rgb(26, 84, 243);"> BACA SELENGKAPNYA</p>
-        </span>
-        <span class="isiartikel3">
-            <img src="banner1.png" style="width: 500px;">
-            <p class="isi"> GIGI PUTIH </p>
-            <p class="selamat">Cara memutihkan gigi</p>
-            <p class="isi">Artikel ini membahas cara-cara memutihkan gigi yang bisa Anda lakukan di rumah atau di klinik dokter.</p>
-            <p style="color: rgb(26, 84, 243);"> BACA SELENGKAPNYA</p>
-        </span>
-        <span class="isiartikel3" style="margin-right: 50px">
-            <img src="banner1.png" style="width: 500px;">
-            <p class="isi"> GIGI PUTIH </p>
-            <p class="selamat">Cara memutihkan gigi</p>
-            <p class="isi">Artikel ini membahas cara-cara memutihkan gigi yang bisa Anda lakukan di rumah atau di klinik dokter.</p>
-            <p style="color: rgb(26, 84, 243);"> BACA SELENGKAPNYA</p>
-        </span>
-        <span class="isiartikel3">
-            <img src="banner1.png" style="width: 500px;">
-            <p class="isi"> GIGI PUTIH </p>
-            <p class="selamat">Cara memutihkan gigi</p>
-            <p class="isi">Artikel ini membahas cara-cara memutihkan gigi yang bisa Anda lakukan di rumah atau di klinik dokter.</p>
-            <p style="color: rgb(26, 84, 243);"> BACA SELENGKAPNYA</p>
-        </span>
-        <span class="isiartikel3" style="margin-right: 50px">
-            <img src="banner1.png" style="width: 500px;">
-            <p class="isi"> GIGI PUTIH </p>
-            <p class="selamat">Cara memutihkan gigi</p>
-            <p class="isi">Artikel ini membahas cara-cara memutihkan gigi yang bisa Anda lakukan di rumah atau di klinik dokter.</p>
-            <p style="color: rgb(26, 84, 243);"> BACA SELENGKAPNYA</p>
-        </span>
-    </span>
-
-
-   <span class="container2">
-    <div class="kiri">
-        <img src="logo2.png">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-youtube"></i>
-        <i class="fab fa-twitter"></i>
+    <div class="container-fluid jumbotron">
+        <div class="settingarikel" style="padding: 3% 30% 3% 10%;">
+            <h1 class="teks-biru">Pertanyaan-pertanyaan Anda Seputar Perawatan Gigi Dan Mulut</h3>
+            <img src="loogo2.jpg" width="9%" style="float: left;">
+            <p>Temukan saran bermanfaat tentang masalah-masalah kesehatan mulut dalam panduan kami yang dibuat oleh Pepsodent, pakar mulut keluarga</p>
+        </div>
     </div>
 
-    <div class="tengah">
-        <ul class="bawah">
-            <li class="menu2"> Peta Situs</li>
-            <li class="menu2"> Hubungi Kami</li>
-            <li class="menu2"> Pemberitahuan Cookie</li>
-        </ul>
-        <ul class="bawah">
-            <li class="menu2"> Pemberitahuan Privasi</li>
-            <li class="menu2"> Syarat Penggunaan</li>
-            <li class="menu2"> Pertanyaan yang sering diajukan</li>
-        </ul>
+    <div class="settingarikel"> 
+        <h4>Aku ingin tahu lebih banyak tentang topik</h4>
+        <div>
+            <select name="topik" class="opsi">
+                <option value=" Semua"   selected>Semua</option>
+                <option value=" Anak">Anak</option>
+                <option value=" Diet & gaya hidup"> Diet & gaya hidup</option>
+                <option value=" Gigi Putih">Gigi Putih</option>
+                <option value=" Gigi Sensitif">Gigi Sensitif</option>
+                <option value=" Gigi dan Lidah">Gigi dan Lidah</option>
+                <option value=" Plak & Pembusukan Gigi">Plak & Pembusukan Gigi</option>
+                <option value=" Sikat Gigi">Sikat Gigi</option>
+            </select>
+        </div>
     </div>
 
-    <div class="kiri">
-        <i class="fas fa-globe">Indonesia</i>
-        <div><img src="unilever.png" style="padding: 20px 10px"></div>
-        <i class="far fa-copyright"> 2020 Unilever</i>
+    <div class="settingarikel">
+        <div class="card-deck">
+            <div class="card" >
+                <img class="card-img-top" src="artikel1.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                <h4 class="card-title text-primary">Sakit gigi berlubang</h4>
+                <p class="card-text">Mengetahui gejala sakit gigi sensitif, sakit gigi berlubang, dan cara mengatasi sakit gigi berlubang.</p>
+                <a href="https://www.tanyapepsodent.com/artikel/plak-pembusukan-gigi/kenali-sakit-gigi-berlubang.html" class="btn btn-link">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="card" >
+                <img class="card-img-top" src="artikel2.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                <h4 class="card-title text-primary">#SenyumkanBumi</h4>
+                <p class="card-text">Setelah lebih dari 70 tahun membantu meningkatkan kesehatan gigi dan mulut masyarakat Indonesia, kini Pepsodent meluncurkan Pepsodent Natural Bamboo, sikat gigi yang ramah lingkungan dengan 100% gagang bamboo.</p>
+                <a href="https://www.tanyapepsodent.com/senyumkanbumi.html" class="btn btn-link">Baca Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="artikel1.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                <h4 class="card-title text-primary">Penyebab Dan Cara Mengatasi Gigi Kuning</h4>
+                <p class="card-text">Noda kuning pada gigi disebabkan oleh kebiasaan buruk terhadap gigi. Berikut beberapa penyebabnya dan cara mengatasi gigi kuning yang wajib anda ketahui.</p>
+                <a href="https://www.tanyapepsodent.com/artikel/gigi-putih/penyebab-gigi-kuning-dan-perubahan-warna.html" class="btn btn-link">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="artikel2.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                <h4 class="card-title text-primary">Segera Atasi Gigi Berlubang agar Tidak Menjadi karies Gigi!</h4>
+                <p class="card-text">Gigi berlubang merupakan kondisi gigi yang harus segera diatasi, karena gigi berlubang bila dibiarkan dapat menyebabkan akan mempengaruhi kesehatan gigi dan gusi, bahkan tubuh Anda.</p>
+                <a href="https://www.tanyapepsodent.com/artikel/plak-pembusukan-gigi/segera-atasi-gigi-berlubang-agar-tidak-menjadi-karies-gigi.html" class="btn btn-link">Baca Selengkapnya</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <p class="akhir">Website ini diarahkan hanya ke konsumen, produk-produk, dan layanan-layanan Unilever Indonesia. Website ini tidak diarahkan untuk konsumen di luar Indonesia.</p>
-</span>
+    <footer class="container-fluid" style="padding: 3% 18%;">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="https://www.tanyapepsodent.com/home.html" class="btn"><img src="logo2.png"><br></a>
+                <div> </div><br><div></div>
+                <a href="https://www.facebook.com/tanyapepsodent" class="btn"><i class="fab fa-facebook-f paddingfooter" style="color: white;"></i></a>
+                <a href="https://www.youtube.com/channel/UCAQY1lbkCOrQuL_2I2ImPCw" class="btn"><i class="fab fa-youtube paddingfooter" style="color: white;"></i></a>
+                <a href="https://twitter.com/TanyaPepsodent" class="btn"><i class="fab fa-twitter paddingfooter" style="color: white;"></i></a>
+            </div>
+            <div class="col-md-6">
+                <div class="row" >
+                    <ul class="col-md-6"> </ul>
+                    <ul class="col-md-6"> </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.tanyapepsodent.com/peta-situs.html" style="color: white;">Peta Situs</a> </li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.tanyapepsodent.com/hubungi-kami.html" style="color: white;">Hubungi Kami</a> </li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.unilevernotices.com/indonesia/bahasa/cookie-notice/notice.html" style="color: white;">Pemberitahuan Cookie</a> </li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.unilevernotices.com/indonesia/bahasa/privacy-notice/notice.html" style="color: white;">Pemberitahuan Privasi</a> </li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.unilever.co.id/legal.html" style="color: white;">Syarat Penggunaan</a> </li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="https://www.tanyapepsodent.com/faq.html" style="color: white;">Pertanyaan yang sering diajukan</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.tanyapepsodent.com/pemilih-negara.html" class="btn"><i class="fas fa-globe paddingfooter" style="color: white;"> Indonesia</i></a><br>
+                <a href="https://www.unilever.co.id/" class="btn"><img src="unilever.png" class="paddingfooter" style="color: white;"></a><br>
+                <a href="https://www.unilever.co.id/" class="btn"><i class="far fa-copyright paddingfooter" style="color: white;"> 2020 Unilever</i></a>
+            </div>
+        </div>
+        <div class="text-center" style="font-size:0.8em;color: white;">Website ini diarahkan hanya ke konsumen, produk-produk, dan layanan-layanan Unilever Indonesia. Website ini tidak diarahkan untuk konsumen di luar Indonesia.</div>
+    </footer>
 </body>
 </html>
